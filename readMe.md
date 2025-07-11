@@ -21,30 +21,32 @@ This is a FastAPI-based bot that scrapes tweets from a public Twitter account us
 ```bash
 git clone https://github.com/shashwatp108/x_scrapper_bot_api.git
 cd x_scrapper_bot_api
+```
 
 2. Create Virtual Environment
 
+```bash
 python3 -m venv .venv
 source .venv/bin/activate  # On macOS/Linux
 # .venv\Scripts\activate    # On Windows
+```
 
 3. Install Dependencies
-
+```bash
 pip install -r requirements.txt
-
+```
 4. Create a .env File
-
+```bash
 TWITTER_USERNMAE=youremail@example.com
 TWITTER_PASSWORD=yourpassword
-
-
+```
 5. Run the api server
-
+```bash
 uvicorn main:app --reload
-
+```
 
 API usage:
-
+```bash
 GET http://127.0.0.1:8000/scrape?username=elonmusk
-
+```
 
